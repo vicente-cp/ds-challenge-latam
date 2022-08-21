@@ -21,3 +21,12 @@ def general_distribution(x_data,count, xlabel, ylabel,  title, tick_rotation = F
     fig.tight_layout()
     plt.show()
     
+def vlo_differences(vlo_i, vlo_o):
+    plt.figure(figsize=(10, 8), dpi=60)
+    plt.scatter(vlo_i,vlo_o,  alpha=.3)
+    plt.tight_layout()
+    plt.title("Vlo-I and Vlo-O distribution", fontsize=18)
+    plt.xlabel("Vlo-I", fontsize= 16)
+    plt.ylabel("Vlo-O", fontsize= 16)
+    plt.grid(True)
+    plt.show()
