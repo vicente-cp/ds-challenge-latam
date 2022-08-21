@@ -1,3 +1,5 @@
+
+import datetime
 import pandas as pd
 
 class FlightData():
@@ -12,4 +14,9 @@ class FlightData():
     
     def _load_data(self, path) -> None:
         self.data = pd.read_csv(path)
+        
+                
+    def convert_dates(self) -> None:
+        self.data["Fecha-I"] = pd.to_datetime(self.data["Fecha-I"])
+        self.data["Fecha-O"] = pd.to_datetime(self.data["Fecha-O"])
 
