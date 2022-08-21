@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Pdfs
+
+Challenge - Data Scientist.pdf
